@@ -122,7 +122,7 @@ class ShopCollectionViewCell: UICollectionViewCell {
 		}
 	 }
 
-	func config(model: Product, indexPath: IndexPath) {
+	func config(model: Product) {
 		nameLabel.text = model.name
 		descriptionLable.text = model.microDescription
 		typeLable.text = model.productDescription

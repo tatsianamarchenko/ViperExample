@@ -11,7 +11,9 @@ import Foundation
 
 // MARK: View Output (Presenter -> View)
 protocol PresenterToViewSavedModuleProtocol {
-   
+
+	func showSavedObjects(products: [SavedObject])
+	
 }
 
 
@@ -21,6 +23,9 @@ protocol ViewToPresenterSavedModuleProtocol {
     var view: PresenterToViewSavedModuleProtocol? { get set }
     var interactor: PresenterToInteractorSavedModuleProtocol? { get set }
     var router: PresenterToRouterSavedModuleProtocol? { get set }
+
+	func getSavedProducts()
+	func passToDelete(product: SavedObject)
 }
 
 
@@ -28,12 +33,17 @@ protocol ViewToPresenterSavedModuleProtocol {
 protocol PresenterToInteractorSavedModuleProtocol {
     
     var presenter: InteractorToPresenterSavedModuleProtocol? { get set }
+
+	func fetchsavedProducts()
+
+	func deliteFromCoreData(productToDelite: SavedObject)
+	
 }
 
 
 // MARK: Interactor Output (Interactor -> Presenter)
 protocol InteractorToPresenterSavedModuleProtocol {
-    
+	func returnSavedObjects(product: [SavedObject])
 }
 
 

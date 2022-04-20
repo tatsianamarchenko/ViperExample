@@ -75,8 +75,6 @@ extension CatalogModuleViewController: PresenterToViewCatalogModuleProtocol{
 	// TODO: Implement View Output Methods
 }
 
-
-
 extension CatalogModuleViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -94,7 +92,7 @@ extension CatalogModuleViewController: UICollectionViewDelegate, UICollectionVie
 				as? ShopCollectionViewCell else {
 					return UICollectionViewCell()
 				}
-		cell.config(model: products[indexPath.row], indexPath: indexPath)
+		cell.config(model: products[indexPath.row])
 		cell.layer.cornerRadius = 20
 		cell.layer.borderWidth = 0
 		cell.layer.shadowColor = UIColor.systemGray.cgColor

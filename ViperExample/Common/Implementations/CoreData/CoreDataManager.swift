@@ -10,9 +10,7 @@ import CoreData
 
 // MARK: - Core Data stack
 class CoreDataManager {
-
-	// static let context = CoreDataManager().persistentContainer.viewContext
-
+	
 	lazy var persistentContainer: NSPersistentContainer = {
 		let container = NSPersistentContainer(name: "ViperExample")
 		container.loadPersistentStores(completionHandler: { (storeDescription, error) in
