@@ -28,8 +28,17 @@ class ProductModulePresenter: ViewToPresenterProductModuleProtocol {
 	func openInBrowser() {
 		view?.clicked(url: product.htmlURL)
 	}
+
+	func addProductForSaving() {
+		interactor?.saveProduct(product: product)
+	}
+
 }
 
 extension ProductModulePresenter: InteractorToPresenterProductModuleProtocol {
+	func getSavigResult(result: String) {
+		view?.showSavigResult(result: result)
+	}
+
     
 }

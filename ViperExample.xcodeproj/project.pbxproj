@@ -62,7 +62,9 @@
 		BFE8E2152810995C00B14BF1 /* SavedModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E2102810995C00B14BF1 /* SavedModuleViewController.swift */; };
 		BFE8E2162810995C00B14BF1 /* SavedModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E2112810995C00B14BF1 /* SavedModuleInteractor.swift */; };
 		BFE8E23C2810A72100B14BF1 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E23B2810A72100B14BF1 /* CoreDataManager.swift */; };
-		BFE8E23F2810A7E500B14BF1 /* SavedObject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E23D2810A7E500B14BF1 /* SavedObject.xcdatamodeld */; };
+		BFE8E2552810B68500B14BF1 /* SavedObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E2532810B68500B14BF1 /* SavedObject+CoreDataClass.swift */; };
+		BFE8E2562810B68500B14BF1 /* SavedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E2542810B68500B14BF1 /* SavedObject+CoreDataProperties.swift */; };
+		BFE8E2572810B95400B14BF1 /* ViperExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E2502810B63800B14BF1 /* ViperExample.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,7 +127,9 @@
 		BFE8E2102810995C00B14BF1 /* SavedModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedModuleViewController.swift; sourceTree = "<group>"; };
 		BFE8E2112810995C00B14BF1 /* SavedModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedModuleInteractor.swift; sourceTree = "<group>"; };
 		BFE8E23B2810A72100B14BF1 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		BFE8E23E2810A7E500B14BF1 /* SavedObject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SavedObject.xcdatamodel; sourceTree = "<group>"; };
+		BFE8E2512810B63800B14BF1 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		BFE8E2532810B68500B14BF1 /* SavedObject+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedObject+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		BFE8E2542810B68500B14BF1 /* SavedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedObject+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +180,7 @@
 				BFE8E1AE281039E000B14BF1 /* Home */,
 				BFE8E1BB281039E000B14BF1 /* Main */,
 				BFE8E1982810384500B14BF1 /* Assets.xcassets */,
-				BFE8E23D2810A7E500B14BF1 /* SavedObject.xcdatamodeld */,
+				BFE8E2502810B63800B14BF1 /* ViperExample.xcdatamodeld */,
 				BFE8E19A2810384500B14BF1 /* LaunchScreen.storyboard */,
 				BFE8E19D2810384500B14BF1 /* Info.plist */,
 				BFE8E1DC28103A1900B14BF1 /* Modules */,
@@ -377,6 +381,8 @@
 		BFE8E23A2810A71200B14BF1 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				BFE8E2532810B68500B14BF1 /* SavedObject+CoreDataClass.swift */,
+				BFE8E2542810B68500B14BF1 /* SavedObject+CoreDataProperties.swift */,
 				BFE8E23B2810A72100B14BF1 /* CoreDataManager.swift */,
 			);
 			path = CoreData;
@@ -528,7 +534,6 @@
 				BFE8E1FA28103F5E00B14BF1 /* CatalogModulePresenter.swift in Sources */,
 				BFE8E1CC281039E000B14BF1 /* HomeModule.swift in Sources */,
 				BFE8E208281070F000B14BF1 /* ProductModulePresenter.swift in Sources */,
-				BFE8E23F2810A7E500B14BF1 /* SavedObject.xcdatamodeld in Sources */,
 				BFE8E1FC28103F5E00B14BF1 /* CatalogModuleViewController.swift in Sources */,
 				BFE8E1CD281039E000B14BF1 /* HomeInteractor.swift in Sources */,
 				BFE8E1D9281039E000B14BF1 /* MainView.swift in Sources */,
@@ -546,6 +551,8 @@
 				BFE8E2162810995C00B14BF1 /* SavedModuleInteractor.swift in Sources */,
 				BFE8E1FB28103F5E00B14BF1 /* CatalogModuleRouter.swift in Sources */,
 				BFE8E1D7281039E000B14BF1 /* MainPresenter.swift in Sources */,
+				BFE8E2562810B68500B14BF1 /* SavedObject+CoreDataProperties.swift in Sources */,
+				BFE8E2572810B95400B14BF1 /* ViperExample.xcdatamodeld in Sources */,
 				BFE8E2132810995C00B14BF1 /* SavedModulePresenter.swift in Sources */,
 				BFE8E1922810384300B14BF1 /* SceneDelegate.swift in Sources */,
 				BFE8E1F228103C6B00B14BF1 /* ChoosedSubcategoriesModuleInteractor.swift in Sources */,
@@ -554,6 +561,7 @@
 				BFE8E23C2810A72100B14BF1 /* CoreDataManager.swift in Sources */,
 				BFE8E1D1281039E000B14BF1 /* MainDefaultRouter.swift in Sources */,
 				BFE8E1D0281039E000B14BF1 /* HomePresenter.swift in Sources */,
+				BFE8E2552810B68500B14BF1 /* SavedObject+CoreDataClass.swift in Sources */,
 				BFE8E2122810995C00B14BF1 /* SavedModuleContract.swift in Sources */,
 				BFE8E20B281070F000B14BF1 /* ProductModuleInteractor.swift in Sources */,
 				BFE8E20A281070F000B14BF1 /* ProductModuleViewController.swift in Sources */,
@@ -770,13 +778,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BFE8E23D2810A7E500B14BF1 /* SavedObject.xcdatamodeld */ = {
+		BFE8E2502810B63800B14BF1 /* ViperExample.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BFE8E23E2810A7E500B14BF1 /* SavedObject.xcdatamodel */,
+				BFE8E2512810B63800B14BF1 /* Model.xcdatamodel */,
 			);
-			currentVersion = BFE8E23E2810A7E500B14BF1 /* SavedObject.xcdatamodel */;
-			path = SavedObject.xcdatamodeld;
+			currentVersion = BFE8E2512810B63800B14BF1 /* Model.xcdatamodel */;
+			path = ViperExample.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

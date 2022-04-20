@@ -15,6 +15,7 @@ protocol PresenterToViewProductModuleProtocol {
 
 	func openInBrowser()
 	func clicked(url: String)
+	func showSavigResult(result: String)
 }
 
 
@@ -27,6 +28,7 @@ protocol ViewToPresenterProductModuleProtocol {
 	
 	func getProduct()
 	func openInBrowser()
+	func addProductForSaving()
 }
 
 
@@ -34,12 +36,14 @@ protocol ViewToPresenterProductModuleProtocol {
 protocol PresenterToInteractorProductModuleProtocol {
     
     var presenter: InteractorToPresenterProductModuleProtocol? { get set }
+
+	func saveProduct(product: Product)
 }
 
 
 // MARK: Interactor Output (Interactor -> Presenter)
 protocol InteractorToPresenterProductModuleProtocol {
-    
+	func getSavigResult(result: String)
 }
 
 

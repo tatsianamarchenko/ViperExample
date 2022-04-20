@@ -7,65 +7,176 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0032E33A-FF20-4EBF-A058-C8C4DCEFCB18"
+            uuid = "151E79E5-5C85-440F-9404-1EE4BEB070C3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ViperExample/Modules/CatalogModule/CatalogModulePresenter.swift"
+            filePath = "ViperExample/Modules/ProductModule/ProductModuleInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "transitionToProduct(view:product:)"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "init(coreDataContext:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "65D37418-AACC-4991-B613-E04CD3C7DF92"
+            uuid = "5E262133-64BA-4673-B6FF-54B3A63125E1"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ViperExample/Modules/ProductModule/ProductModuleViewController.swift"
+            filePath = "ViperExample/Common/Implementations/CoreData/CoreDataManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "ProductModuleViewController"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "saveContext()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "98FAD2C6-9CA9-47C2-A909-DD7291371A0F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViperExample/Common/Implementations/CoreData/CoreDataManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "persistentContainer"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B0E1D8DC-7DD4-46F2-A64B-2ED1E1F55218"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViperExample/Common/Implementations/CoreData/CoreDataManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "persistentContainer"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4CD70D4C-EFE6-4395-9B26-E0724F7868D5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViperExample/Common/Implementations/CoreData/CoreDataManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "persistentContainer"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F0785480-59FE-4065-B27D-FE767CD70428"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SavedObject+CoreDataClass.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "SavedObject"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F0785480-59FE-4065-B27D-FE767CD70428 - 3eba31482de35419"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ViperExample.SavedObject.__allocating_init(entity: __C.NSEntityDescription, insertInto: Swift.Optional&lt;__C.NSManagedObjectContext&gt;) -&gt; ViperExample.SavedObject"
+                  moduleName = "ViperExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tatsianamarchanka/Downloads/ViperExample/SavedObject+CoreDataClass.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "F0785480-59FE-4065-B27D-FE767CD70428 - 4c92a1b4012131b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ViperExample.SavedObject.init(entity: __C.NSEntityDescription, insertInto: Swift.Optional&lt;__C.NSManagedObjectContext&gt;) -&gt; ViperExample.SavedObject"
+                  moduleName = "ViperExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tatsianamarchanka/Downloads/ViperExample/SavedObject+CoreDataClass.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "133">
+               </Location>
+               <Location
+                  uuid = "F0785480-59FE-4065-B27D-FE767CD70428 - b53224c7872c1635"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ViperExample.SavedObject.__deallocating_deinit"
+                  moduleName = "ViperExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tatsianamarchanka/Downloads/ViperExample/SavedObject+CoreDataClass.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3049A1A9-5B2C-4DF5-B192-ADB16BE61C9E"
+            uuid = "338F7961-CD61-4AE4-95D6-6ABB2DE1FFD1"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ViperExample/Modules/ProductModule/ProductModuleViewController.swift"
+            filePath = "ViperExample/Common/Implementations/CoreData/CoreDataManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "persistentContainer"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FDE898F6-8718-40B7-810C-1D79195C7311"
+            uuid = "BBB790C2-E7F8-4A22-8D23-B6CE58547339"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ViperExample/Modules/ProductModule/ProductModuleViewController.swift"
+            filePath = "ViperExample/Common/Implementations/CoreData/CoreDataManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "persistentContainer"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -12,4 +12,5 @@ class SavedModuleInteractor: PresenterToInteractorSavedModuleProtocol {
 
     // MARK: Properties
     var presenter: InteractorToPresenterSavedModuleProtocol?
+	
 }

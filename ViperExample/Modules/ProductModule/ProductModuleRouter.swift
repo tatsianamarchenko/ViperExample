@@ -21,7 +21,7 @@ class ProductModuleRouter: PresenterToRouterProductModuleProtocol {
         viewController.presenter = presenter
         viewController.presenter?.router = ProductModuleRouter()
         viewController.presenter?.view = viewController
-        viewController.presenter?.interactor = ProductModuleInteractor()
+		viewController.presenter?.interactor = ProductModuleInteractor(coreDataContext: CoreDataManager())
         viewController.presenter?.interactor?.presenter = presenter
         
         return viewController

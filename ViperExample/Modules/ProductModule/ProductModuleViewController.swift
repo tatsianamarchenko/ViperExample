@@ -50,9 +50,18 @@ class ProductModuleViewController: UIViewController {
 
 	private lazy var linkLable : UIButton = {
 		var button = UIButton()
-		button.backgroundColor = .blue
+		button.backgroundColor = .systemGray3
 		button.setTitle("open in browser", for: .normal)
 		button.addTarget(self, action: #selector(openInBrowser), for: .touchUpInside)
+		button.layer.cornerRadius = 10
+		return button
+	}()
+
+	private lazy var saveButton : UIButton = {
+		var button = UIButton()
+		button.backgroundColor = .blue
+		button.setTitle("save", for: .normal)
+		button.addTarget(self, action: #selector(save), for: .touchUpInside)
 		button.layer.cornerRadius = 10
 		return button
 	}()
@@ -67,6 +76,7 @@ class ProductModuleViewController: UIViewController {
 		scrollView.addSubview(descriptionLable)
 		scrollView.addSubview(microDescriptionLable)
 		scrollView.addSubview(linkLable)
+		scrollView.addSubview(saveButton)
 
 		photoOfProduct.snp.makeConstraints { make in
 			make.width.equalTo(view.frame.width-30)
@@ -103,6 +113,13 @@ class ProductModuleViewController: UIViewController {
 
 		}
 
+		saveButton.snp.makeConstraints { make in
+			make.height.equalTo(30)
+			make.width.equalTo(scrollView)
+			make.top.equalTo(linkLable.snp_bottomMargin).inset(-20)
+
+		}
+
     }
 
 	override func viewWillAppear(_ animated: Bool) {
@@ -116,6 +133,7 @@ class ProductModuleViewController: UIViewController {
 }
 
 extension ProductModuleViewController: PresenterToViewProductModuleProtocol{
+
 	func showProduct(product: Product) {
 
 		title = product.name
@@ -128,9 +146,20 @@ extension ProductModuleViewController: PresenterToViewProductModuleProtocol{
 		presenter?.openInBrowser()
 	}
 
+	@objc func save() {
+		presenter?.addProductForSaving()
+	}
+
 	func clicked(url: String) {
 		if let url = URL(string: url) {
 			UIApplication.shared.open(url)
 		}
+	}
+
+	func showSavigResult(result: String) {
+		let alert = UIAlertController(title: "Saved", message: result, preferredStyle: .alert)
+		alert.addAction(UIAlertAction(title: "ok", style: .cancel, handler: nil))
+		present(alert, animated: true, completion: nil)
+
 	}
 }
