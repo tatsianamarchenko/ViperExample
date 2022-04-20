@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class CatalogModulePresenter: ViewToPresenterCatalogModuleProtocol {
 
@@ -20,6 +21,10 @@ class CatalogModulePresenter: ViewToPresenterCatalogModuleProtocol {
 	}
 	func update() {
 		interactor?.loadData(category: subcategory)
+	}
+
+	func transitionToProduct(view: UIViewController, product: Product) {
+		router?.transitionToProduct(view: view, product: product)
 	}
 
 }

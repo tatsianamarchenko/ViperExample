@@ -23,14 +23,6 @@ class ShopCollectionViewCell: UICollectionViewCell {
 		return lable
 	}()
 
-	private lazy var  favoriteButton: UIButton = {
-		var button = UIButton()
-		button.setImage(UIImage(systemName: "heart")?.withTintColor(.blue, renderingMode: .alwaysOriginal), for: .normal)
-		button.addTarget(self, action: #selector(toFavorite), for: .touchUpInside)
-		button.titleLabel?.textAlignment = .center
-		return button
-	}()
-
 	private lazy var typeLable : UILabel = {
 		var lable = UILabel()
 		lable.font = .systemFont(ofSize: 15, weight: .regular)
@@ -77,7 +69,6 @@ class ShopCollectionViewCell: UICollectionViewCell {
 		 addSubview(descriptionLable)
 		 addSubview(typeLable)
 		 addSubview(priceLable)
-		// addSubview(favoriteButton)
 		 makeConstants()
 	 }
 
@@ -137,14 +128,5 @@ class ShopCollectionViewCell: UICollectionViewCell {
 		typeLable.text = model.productDescription
 		priceLable.text = "\(model.prices.priceMin.amount) - \(model.prices.priceMax.amount) \(model.prices.priceMax.currency.rawValue)"
 		photoOfProduct.downloadedFrom(url: "https:\(model.images.header)")
-	}
-
-	@objc private func toFavorite(_ sender: UIButton) {
-
-	}
-
-	private func createAlert(string: String) {
-		let alert = UIAlertController(title: "Added", message: string, preferredStyle: .alert)
-		alert.addAction(UIAlertAction(title: "ok", style: .cancel, handler: nil))
 	}
  }

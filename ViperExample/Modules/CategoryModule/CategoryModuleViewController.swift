@@ -16,6 +16,7 @@ class CategoryModuleViewController: UIViewController {
 		table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 		return table
 	}()
+
 	var products = [String]()
 	// MARK: - Lifecycle Methods
 	override func viewDidLoad() {
@@ -61,6 +62,7 @@ extension CategoryModuleViewController: UITableViewDelegate, UITableViewDataSour
 	}
 
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		tableView.deselectRow(at: indexPath, animated: true)
 		presenter?.openSubcategory(category: products[indexPath.row], view: self)
 	}
 }

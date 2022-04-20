@@ -20,7 +20,7 @@ extension HomeDefaultRouter: HomeRouter {
     func getViewControllers() -> [UIViewController] {
         return [
 			CategoryModuleRouter.createModule(),
-		//	CatalogModuleRouter.createModule()
+			SavedModuleRouter.createModule()
         ].map { UINavigationController(rootViewController: $0) }
     }
 }

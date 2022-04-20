@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 // MARK: View Output (Presenter -> View)
 protocol PresenterToViewCatalogModuleProtocol {
@@ -23,6 +23,7 @@ protocol ViewToPresenterCatalogModuleProtocol {
 	var router: PresenterToRouterCatalogModuleProtocol? { get set }
 
 	func update()
+	func transitionToProduct(view: UIViewController, product: Product)
 }
 
 
@@ -45,5 +46,7 @@ protocol InteractorToPresenterCatalogModuleProtocol {
 
 // MARK: Router Input (Presenter -> Router)
 protocol PresenterToRouterCatalogModuleProtocol {
-
+	
+	func transitionToProduct(view: UIViewController, product: Product)
+	
 }

@@ -129,6 +129,8 @@ extension CatalogModuleViewController: UICollectionViewDelegate, UICollectionVie
 	}
 
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		collectionView.deselectItem(at: indexPath, animated: true)
+		presenter?.transitionToProduct(view: self, product: products[indexPath.row])
 
 	}
 }
@@ -148,6 +150,5 @@ extension CatalogModuleViewController: UISearchBarDelegate {
 	}
 
 	func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-
 	}
 }

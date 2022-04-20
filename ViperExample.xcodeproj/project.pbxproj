@@ -10,7 +10,6 @@
 		A9A648CCC0CB215FFF0DB3F4 /* Pods_ViperExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5C32D40A11C6F05A07FAD4 /* Pods_ViperExample.framework */; };
 		BFE8E1902810384300B14BF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E18F2810384300B14BF1 /* AppDelegate.swift */; };
 		BFE8E1922810384300B14BF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1912810384300B14BF1 /* SceneDelegate.swift */; };
-		BFE8E1942810384300B14BF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1932810384300B14BF1 /* ViewController.swift */; };
 		BFE8E1972810384300B14BF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE8E1952810384300B14BF1 /* Main.storyboard */; };
 		BFE8E1992810384500B14BF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE8E1982810384500B14BF1 /* Assets.xcassets */; };
 		BFE8E19C2810384500B14BF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE8E19A2810384500B14BF1 /* LaunchScreen.storyboard */; };
@@ -53,6 +52,16 @@
 		BFE8E1FC28103F5E00B14BF1 /* CatalogModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1F728103F5E00B14BF1 /* CatalogModuleViewController.swift */; };
 		BFE8E1FD28103F5E00B14BF1 /* CatalogModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1F828103F5E00B14BF1 /* CatalogModuleInteractor.swift */; };
 		BFE8E20028104ECC00B14BF1 /* UiImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1FF28104ECC00B14BF1 /* UiImageExtension.swift */; };
+		BFE8E207281070F000B14BF1 /* ProductModuleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E202281070F000B14BF1 /* ProductModuleContract.swift */; };
+		BFE8E208281070F000B14BF1 /* ProductModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E203281070F000B14BF1 /* ProductModulePresenter.swift */; };
+		BFE8E209281070F000B14BF1 /* ProductModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E204281070F000B14BF1 /* ProductModuleRouter.swift */; };
+		BFE8E20A281070F000B14BF1 /* ProductModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E205281070F000B14BF1 /* ProductModuleViewController.swift */; };
+		BFE8E20B281070F000B14BF1 /* ProductModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E206281070F000B14BF1 /* ProductModuleInteractor.swift */; };
+		BFE8E2122810995C00B14BF1 /* SavedModuleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E20D2810995C00B14BF1 /* SavedModuleContract.swift */; };
+		BFE8E2132810995C00B14BF1 /* SavedModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E20E2810995C00B14BF1 /* SavedModulePresenter.swift */; };
+		BFE8E2142810995C00B14BF1 /* SavedModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E20F2810995C00B14BF1 /* SavedModuleRouter.swift */; };
+		BFE8E2152810995C00B14BF1 /* SavedModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E2102810995C00B14BF1 /* SavedModuleViewController.swift */; };
+		BFE8E2162810995C00B14BF1 /* SavedModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E2112810995C00B14BF1 /* SavedModuleInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,7 +71,6 @@
 		BFE8E18C2810384300B14BF1 /* ViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE8E18F2810384300B14BF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE8E1912810384300B14BF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BFE8E1932810384300B14BF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFE8E1962810384300B14BF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFE8E1982810384500B14BF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFE8E19B2810384500B14BF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,6 +114,16 @@
 		BFE8E1F728103F5E00B14BF1 /* CatalogModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogModuleViewController.swift; sourceTree = "<group>"; };
 		BFE8E1F828103F5E00B14BF1 /* CatalogModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogModuleInteractor.swift; sourceTree = "<group>"; };
 		BFE8E1FF28104ECC00B14BF1 /* UiImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiImageExtension.swift; sourceTree = "<group>"; };
+		BFE8E202281070F000B14BF1 /* ProductModuleContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModuleContract.swift; sourceTree = "<group>"; };
+		BFE8E203281070F000B14BF1 /* ProductModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModulePresenter.swift; sourceTree = "<group>"; };
+		BFE8E204281070F000B14BF1 /* ProductModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModuleRouter.swift; sourceTree = "<group>"; };
+		BFE8E205281070F000B14BF1 /* ProductModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModuleViewController.swift; sourceTree = "<group>"; };
+		BFE8E206281070F000B14BF1 /* ProductModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModuleInteractor.swift; sourceTree = "<group>"; };
+		BFE8E20D2810995C00B14BF1 /* SavedModuleContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedModuleContract.swift; sourceTree = "<group>"; };
+		BFE8E20E2810995C00B14BF1 /* SavedModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedModulePresenter.swift; sourceTree = "<group>"; };
+		BFE8E20F2810995C00B14BF1 /* SavedModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedModuleRouter.swift; sourceTree = "<group>"; };
+		BFE8E2102810995C00B14BF1 /* SavedModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedModuleViewController.swift; sourceTree = "<group>"; };
+		BFE8E2112810995C00B14BF1 /* SavedModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedModuleInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +170,6 @@
 			children = (
 				BFE8E18F2810384300B14BF1 /* AppDelegate.swift */,
 				BFE8E1912810384300B14BF1 /* SceneDelegate.swift */,
-				BFE8E1932810384300B14BF1 /* ViewController.swift */,
 				BFE8E1DA281039E800B14BF1 /* ShopCollectionViewCell.swift */,
 				BFE8E1AE281039E000B14BF1 /* Home */,
 				BFE8E1BB281039E000B14BF1 /* Main */,
@@ -277,6 +294,8 @@
 		BFE8E1DC28103A1900B14BF1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				BFE8E20C281098B900B14BF1 /* SavedModule */,
+				BFE8E201281070DB00B14BF1 /* ProductModule */,
 				BFE8E1F328103F5100B14BF1 /* CatalogModule */,
 				BFE8E1E828103C5900B14BF1 /* ChoosedSubcategoriesModule */,
 				BFE8E1E728103B9900B14BF1 /* CategoryModule */,
@@ -326,6 +345,30 @@
 				BFE8E1FF28104ECC00B14BF1 /* UiImageExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BFE8E201281070DB00B14BF1 /* ProductModule */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8E202281070F000B14BF1 /* ProductModuleContract.swift */,
+				BFE8E203281070F000B14BF1 /* ProductModulePresenter.swift */,
+				BFE8E204281070F000B14BF1 /* ProductModuleRouter.swift */,
+				BFE8E205281070F000B14BF1 /* ProductModuleViewController.swift */,
+				BFE8E206281070F000B14BF1 /* ProductModuleInteractor.swift */,
+			);
+			path = ProductModule;
+			sourceTree = "<group>";
+		};
+		BFE8E20C281098B900B14BF1 /* SavedModule */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8E20D2810995C00B14BF1 /* SavedModuleContract.swift */,
+				BFE8E20E2810995C00B14BF1 /* SavedModulePresenter.swift */,
+				BFE8E20F2810995C00B14BF1 /* SavedModuleRouter.swift */,
+				BFE8E2102810995C00B14BF1 /* SavedModuleViewController.swift */,
+				BFE8E2112810995C00B14BF1 /* SavedModuleInteractor.swift */,
+			);
+			path = SavedModule;
 			sourceTree = "<group>";
 		};
 		D05231DBA89D42AC54E7837A /* Frameworks */ = {
@@ -452,11 +495,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE8E1E528103A2B00B14BF1 /* CategoryModuleViewController.swift in Sources */,
-				BFE8E1942810384300B14BF1 /* ViewController.swift in Sources */,
 				BFE8E1D5281039E000B14BF1 /* MainModule.swift in Sources */,
+				BFE8E2152810995C00B14BF1 /* SavedModuleViewController.swift in Sources */,
 				BFE8E1E628103A2B00B14BF1 /* CategoryModuleInteractor.swift in Sources */,
 				BFE8E1EF28103C6B00B14BF1 /* ChoosedSubcategoriesModulePresenter.swift in Sources */,
 				BFE8E1E428103A2B00B14BF1 /* CategoryModuleRouter.swift in Sources */,
+				BFE8E207281070F000B14BF1 /* ProductModuleContract.swift in Sources */,
 				BFE8E1CE281039E000B14BF1 /* HomeView.swift in Sources */,
 				BFE8E1CB281039E000B14BF1 /* HomeDefaultRouter.swift in Sources */,
 				BFE8E1D4281039E000B14BF1 /* MainDefaultPresenter.swift in Sources */,
@@ -473,26 +517,34 @@
 				BFE8E20028104ECC00B14BF1 /* UiImageExtension.swift in Sources */,
 				BFE8E1FA28103F5E00B14BF1 /* CatalogModulePresenter.swift in Sources */,
 				BFE8E1CC281039E000B14BF1 /* HomeModule.swift in Sources */,
+				BFE8E208281070F000B14BF1 /* ProductModulePresenter.swift in Sources */,
 				BFE8E1FC28103F5E00B14BF1 /* CatalogModuleViewController.swift in Sources */,
 				BFE8E1CD281039E000B14BF1 /* HomeInteractor.swift in Sources */,
 				BFE8E1D9281039E000B14BF1 /* MainView.swift in Sources */,
 				BFE8E1AA281039CA00B14BF1 /* ApiService.swift in Sources */,
 				BFE8E1AC281039CA00B14BF1 /* Objects.swift in Sources */,
+				BFE8E209281070F000B14BF1 /* ProductModuleRouter.swift in Sources */,
 				BFE8E1E228103A2B00B14BF1 /* CategoryModuleContract.swift in Sources */,
 				BFE8E1CA281039E000B14BF1 /* HomeDefaultInteractor.swift in Sources */,
 				BFE8E1F928103F5E00B14BF1 /* CatalogModuleContract.swift in Sources */,
+				BFE8E2142810995C00B14BF1 /* SavedModuleRouter.swift in Sources */,
 				BFE8E1D3281039E000B14BF1 /* MainDefaultInteractor.swift in Sources */,
 				BFE8E1D8281039E000B14BF1 /* MainRouter.swift in Sources */,
 				BFE8E1D6281039E000B14BF1 /* MainInteractor.swift in Sources */,
 				BFE8E1F128103C6B00B14BF1 /* ChoosedSubcategoriesModuleViewController.swift in Sources */,
+				BFE8E2162810995C00B14BF1 /* SavedModuleInteractor.swift in Sources */,
 				BFE8E1FB28103F5E00B14BF1 /* CatalogModuleRouter.swift in Sources */,
 				BFE8E1D7281039E000B14BF1 /* MainPresenter.swift in Sources */,
+				BFE8E2132810995C00B14BF1 /* SavedModulePresenter.swift in Sources */,
 				BFE8E1922810384300B14BF1 /* SceneDelegate.swift in Sources */,
 				BFE8E1F228103C6B00B14BF1 /* ChoosedSubcategoriesModuleInteractor.swift in Sources */,
 				BFE8E1EE28103C6B00B14BF1 /* ChoosedSubcategoriesModuleContract.swift in Sources */,
 				BFE8E1AD281039CA00B14BF1 /* Cattegories.swift in Sources */,
 				BFE8E1D1281039E000B14BF1 /* MainDefaultRouter.swift in Sources */,
 				BFE8E1D0281039E000B14BF1 /* HomePresenter.swift in Sources */,
+				BFE8E2122810995C00B14BF1 /* SavedModuleContract.swift in Sources */,
+				BFE8E20B281070F000B14BF1 /* ProductModuleInteractor.swift in Sources */,
+				BFE8E20A281070F000B14BF1 /* ProductModuleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

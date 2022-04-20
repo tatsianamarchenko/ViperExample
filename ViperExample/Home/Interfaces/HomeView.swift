@@ -11,6 +11,6 @@ import UIKit
 protocol HomeView: AnyObject {
     
     var presenter: HomePresenter? { get set }
-
-    func display(_ viewControllers: [UIViewController])
+	
+	func display(_ viewControllers: [UIViewController])
 }

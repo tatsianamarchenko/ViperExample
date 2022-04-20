@@ -28,4 +28,9 @@ class CatalogModuleRouter: PresenterToRouterCatalogModuleProtocol {
 		return viewController
 	}
 
+	func transitionToProduct(view: UIViewController, product: Product) {
+		let vc = ProductModuleRouter.createModule(product: product)
+		view.navigationController?.pushViewController(vc, animated: true)
+	}
+
 }

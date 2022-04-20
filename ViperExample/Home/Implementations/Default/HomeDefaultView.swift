@@ -15,8 +15,7 @@ class HomeDefaultView: UITabBarController {
 
 extension HomeDefaultView: HomeView {
 
-    func display(_ viewControllers: [UIViewController]) {
+	func display(_ viewControllers: [UIViewController]) {
         self.viewControllers = viewControllers
     }
 }
-

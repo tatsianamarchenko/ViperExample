@@ -68,6 +68,7 @@ extension ChoosedSubcategoriesModuleViewController: UITableViewDelegate, UITable
 	}
 
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		tableView.deselectRow(at: indexPath, animated: true)
 		presenter?.transitionToCatalog(subcategory: subcategories[indexPath.section].finalSubcateggoryPath[indexPath.row].pathUrl, viewController: self)
 	}
 }
