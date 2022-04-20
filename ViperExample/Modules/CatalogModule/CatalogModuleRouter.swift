@@ -10,21 +10,22 @@ import Foundation
 import UIKit
 
 class CatalogModuleRouter: PresenterToRouterCatalogModuleProtocol {
-    
-    // MARK: Static methods
-    static func createModule() -> UIViewController {
-        
-        let viewController = CatalogModuleViewController()
-        
-        let presenter: ViewToPresenterCatalogModuleProtocol & InteractorToPresenterCatalogModuleProtocol = CatalogModulePresenter()
-        
-        viewController.presenter = presenter
-        viewController.presenter?.router = CatalogModuleRouter()
-        viewController.presenter?.view = viewController
-        viewController.presenter?.interactor = CatalogModuleInteractor()
-        viewController.presenter?.interactor?.presenter = presenter
-        
-        return viewController
-    }
-    
+
+	// MARK: Static methods
+	static func createModule(subcategory: String) -> UIViewController {
+
+		let viewController = CatalogModuleViewController()
+
+		let presenter: ViewToPresenterCatalogModuleProtocol & InteractorToPresenterCatalogModuleProtocol = CatalogModulePresenter(subcategory: subcategory)
+
+		viewController.presenter = presenter
+		viewController.presenter?.router = CatalogModuleRouter()
+		viewController.presenter?.view = viewController
+		viewController.presenter?.interactor = CatalogModuleInteractor()
+		viewController.presenter?.interactor?.presenter = presenter
+		viewController.presenter?.interactor?.apiService = ApiService()
+
+		return viewController
+	}
+
 }

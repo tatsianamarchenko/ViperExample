@@ -7,15 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9A648CCC0CB215FFF0DB3F4 /* Pods_ViperExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5C32D40A11C6F05A07FAD4 /* Pods_ViperExample.framework */; };
 		BFE8E1902810384300B14BF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E18F2810384300B14BF1 /* AppDelegate.swift */; };
 		BFE8E1922810384300B14BF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1912810384300B14BF1 /* SceneDelegate.swift */; };
 		BFE8E1942810384300B14BF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1932810384300B14BF1 /* ViewController.swift */; };
 		BFE8E1972810384300B14BF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE8E1952810384300B14BF1 /* Main.storyboard */; };
 		BFE8E1992810384500B14BF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE8E1982810384500B14BF1 /* Assets.xcassets */; };
 		BFE8E19C2810384500B14BF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE8E19A2810384500B14BF1 /* LaunchScreen.storyboard */; };
+		BFE8E1AA281039CA00B14BF1 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1A5281039CA00B14BF1 /* ApiService.swift */; };
+		BFE8E1AB281039CA00B14BF1 /* ApiServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1A6281039CA00B14BF1 /* ApiServiceProtocol.swift */; };
+		BFE8E1AC281039CA00B14BF1 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1A8281039CA00B14BF1 /* Objects.swift */; };
+		BFE8E1AD281039CA00B14BF1 /* Cattegories.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1A9281039CA00B14BF1 /* Cattegories.swift */; };
+		BFE8E1C8281039E000B14BF1 /* HomeDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1B1281039E000B14BF1 /* HomeDefaultView.swift */; };
+		BFE8E1C9281039E000B14BF1 /* HomeDefaultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1B2281039E000B14BF1 /* HomeDefaultPresenter.swift */; };
+		BFE8E1CA281039E000B14BF1 /* HomeDefaultInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1B3281039E000B14BF1 /* HomeDefaultInteractor.swift */; };
+		BFE8E1CB281039E000B14BF1 /* HomeDefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1B4281039E000B14BF1 /* HomeDefaultRouter.swift */; };
+		BFE8E1CC281039E000B14BF1 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1B5281039E000B14BF1 /* HomeModule.swift */; };
+		BFE8E1CD281039E000B14BF1 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1B7281039E000B14BF1 /* HomeInteractor.swift */; };
+		BFE8E1CE281039E000B14BF1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1B8281039E000B14BF1 /* HomeView.swift */; };
+		BFE8E1CF281039E000B14BF1 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1B9281039E000B14BF1 /* HomeRouter.swift */; };
+		BFE8E1D0281039E000B14BF1 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1BA281039E000B14BF1 /* HomePresenter.swift */; };
+		BFE8E1D1281039E000B14BF1 /* MainDefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1BE281039E000B14BF1 /* MainDefaultRouter.swift */; };
+		BFE8E1D2281039E000B14BF1 /* MainDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1BF281039E000B14BF1 /* MainDefaultView.swift */; };
+		BFE8E1D3281039E000B14BF1 /* MainDefaultInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1C0281039E000B14BF1 /* MainDefaultInteractor.swift */; };
+		BFE8E1D4281039E000B14BF1 /* MainDefaultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1C1281039E000B14BF1 /* MainDefaultPresenter.swift */; };
+		BFE8E1D5281039E000B14BF1 /* MainModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1C2281039E000B14BF1 /* MainModule.swift */; };
+		BFE8E1D6281039E000B14BF1 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1C4281039E000B14BF1 /* MainInteractor.swift */; };
+		BFE8E1D7281039E000B14BF1 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1C5281039E000B14BF1 /* MainPresenter.swift */; };
+		BFE8E1D8281039E000B14BF1 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1C6281039E000B14BF1 /* MainRouter.swift */; };
+		BFE8E1D9281039E000B14BF1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1C7281039E000B14BF1 /* MainView.swift */; };
+		BFE8E1DB281039E800B14BF1 /* ShopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1DA281039E800B14BF1 /* ShopCollectionViewCell.swift */; };
+		BFE8E1E228103A2B00B14BF1 /* CategoryModuleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1DD28103A2B00B14BF1 /* CategoryModuleContract.swift */; };
+		BFE8E1E328103A2B00B14BF1 /* CategoryModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1DE28103A2B00B14BF1 /* CategoryModulePresenter.swift */; };
+		BFE8E1E428103A2B00B14BF1 /* CategoryModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1DF28103A2B00B14BF1 /* CategoryModuleRouter.swift */; };
+		BFE8E1E528103A2B00B14BF1 /* CategoryModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1E028103A2B00B14BF1 /* CategoryModuleViewController.swift */; };
+		BFE8E1E628103A2B00B14BF1 /* CategoryModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1E128103A2B00B14BF1 /* CategoryModuleInteractor.swift */; };
+		BFE8E1EE28103C6B00B14BF1 /* ChoosedSubcategoriesModuleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1E928103C6B00B14BF1 /* ChoosedSubcategoriesModuleContract.swift */; };
+		BFE8E1EF28103C6B00B14BF1 /* ChoosedSubcategoriesModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1EA28103C6B00B14BF1 /* ChoosedSubcategoriesModulePresenter.swift */; };
+		BFE8E1F028103C6B00B14BF1 /* ChoosedSubcategoriesModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1EB28103C6B00B14BF1 /* ChoosedSubcategoriesModuleRouter.swift */; };
+		BFE8E1F128103C6B00B14BF1 /* ChoosedSubcategoriesModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1EC28103C6B00B14BF1 /* ChoosedSubcategoriesModuleViewController.swift */; };
+		BFE8E1F228103C6B00B14BF1 /* ChoosedSubcategoriesModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1ED28103C6B00B14BF1 /* ChoosedSubcategoriesModuleInteractor.swift */; };
+		BFE8E1F928103F5E00B14BF1 /* CatalogModuleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1F428103F5E00B14BF1 /* CatalogModuleContract.swift */; };
+		BFE8E1FA28103F5E00B14BF1 /* CatalogModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1F528103F5E00B14BF1 /* CatalogModulePresenter.swift */; };
+		BFE8E1FB28103F5E00B14BF1 /* CatalogModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1F628103F5E00B14BF1 /* CatalogModuleRouter.swift */; };
+		BFE8E1FC28103F5E00B14BF1 /* CatalogModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1F728103F5E00B14BF1 /* CatalogModuleViewController.swift */; };
+		BFE8E1FD28103F5E00B14BF1 /* CatalogModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1F828103F5E00B14BF1 /* CatalogModuleInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D5C32D40A11C6F05A07FAD4 /* Pods_ViperExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DB861BF48E89907AF628C4A /* Pods-ViperExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperExample.debug.xcconfig"; path = "Target Support Files/Pods-ViperExample/Pods-ViperExample.debug.xcconfig"; sourceTree = "<group>"; };
+		B5E5172EEF1584A9795C1C20 /* Pods-ViperExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperExample.release.xcconfig"; path = "Target Support Files/Pods-ViperExample/Pods-ViperExample.release.xcconfig"; sourceTree = "<group>"; };
 		BFE8E18C2810384300B14BF1 /* ViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE8E18F2810384300B14BF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE8E1912810384300B14BF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +66,44 @@
 		BFE8E1982810384500B14BF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFE8E19B2810384500B14BF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFE8E19D2810384500B14BF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFE8E1A5281039CA00B14BF1 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		BFE8E1A6281039CA00B14BF1 /* ApiServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiServiceProtocol.swift; sourceTree = "<group>"; };
+		BFE8E1A8281039CA00B14BF1 /* Objects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
+		BFE8E1A9281039CA00B14BF1 /* Cattegories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cattegories.swift; sourceTree = "<group>"; };
+		BFE8E1B1281039E000B14BF1 /* HomeDefaultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDefaultView.swift; sourceTree = "<group>"; };
+		BFE8E1B2281039E000B14BF1 /* HomeDefaultPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDefaultPresenter.swift; sourceTree = "<group>"; };
+		BFE8E1B3281039E000B14BF1 /* HomeDefaultInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDefaultInteractor.swift; sourceTree = "<group>"; };
+		BFE8E1B4281039E000B14BF1 /* HomeDefaultRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDefaultRouter.swift; sourceTree = "<group>"; };
+		BFE8E1B5281039E000B14BF1 /* HomeModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
+		BFE8E1B7281039E000B14BF1 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		BFE8E1B8281039E000B14BF1 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BFE8E1B9281039E000B14BF1 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		BFE8E1BA281039E000B14BF1 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		BFE8E1BE281039E000B14BF1 /* MainDefaultRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDefaultRouter.swift; sourceTree = "<group>"; };
+		BFE8E1BF281039E000B14BF1 /* MainDefaultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDefaultView.swift; sourceTree = "<group>"; };
+		BFE8E1C0281039E000B14BF1 /* MainDefaultInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDefaultInteractor.swift; sourceTree = "<group>"; };
+		BFE8E1C1281039E000B14BF1 /* MainDefaultPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDefaultPresenter.swift; sourceTree = "<group>"; };
+		BFE8E1C2281039E000B14BF1 /* MainModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainModule.swift; sourceTree = "<group>"; };
+		BFE8E1C4281039E000B14BF1 /* MainInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		BFE8E1C5281039E000B14BF1 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		BFE8E1C6281039E000B14BF1 /* MainRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		BFE8E1C7281039E000B14BF1 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BFE8E1DA281039E800B14BF1 /* ShopCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCollectionViewCell.swift; sourceTree = "<group>"; };
+		BFE8E1DD28103A2B00B14BF1 /* CategoryModuleContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModuleContract.swift; sourceTree = "<group>"; };
+		BFE8E1DE28103A2B00B14BF1 /* CategoryModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModulePresenter.swift; sourceTree = "<group>"; };
+		BFE8E1DF28103A2B00B14BF1 /* CategoryModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModuleRouter.swift; sourceTree = "<group>"; };
+		BFE8E1E028103A2B00B14BF1 /* CategoryModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModuleViewController.swift; sourceTree = "<group>"; };
+		BFE8E1E128103A2B00B14BF1 /* CategoryModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModuleInteractor.swift; sourceTree = "<group>"; };
+		BFE8E1E928103C6B00B14BF1 /* ChoosedSubcategoriesModuleContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosedSubcategoriesModuleContract.swift; sourceTree = "<group>"; };
+		BFE8E1EA28103C6B00B14BF1 /* ChoosedSubcategoriesModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosedSubcategoriesModulePresenter.swift; sourceTree = "<group>"; };
+		BFE8E1EB28103C6B00B14BF1 /* ChoosedSubcategoriesModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosedSubcategoriesModuleRouter.swift; sourceTree = "<group>"; };
+		BFE8E1EC28103C6B00B14BF1 /* ChoosedSubcategoriesModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosedSubcategoriesModuleViewController.swift; sourceTree = "<group>"; };
+		BFE8E1ED28103C6B00B14BF1 /* ChoosedSubcategoriesModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosedSubcategoriesModuleInteractor.swift; sourceTree = "<group>"; };
+		BFE8E1F428103F5E00B14BF1 /* CatalogModuleContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogModuleContract.swift; sourceTree = "<group>"; };
+		BFE8E1F528103F5E00B14BF1 /* CatalogModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogModulePresenter.swift; sourceTree = "<group>"; };
+		BFE8E1F628103F5E00B14BF1 /* CatalogModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogModuleRouter.swift; sourceTree = "<group>"; };
+		BFE8E1F728103F5E00B14BF1 /* CatalogModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogModuleViewController.swift; sourceTree = "<group>"; };
+		BFE8E1F828103F5E00B14BF1 /* CatalogModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogModuleInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +111,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A648CCC0CB215FFF0DB3F4 /* Pods_ViperExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5764FB4E8588983A44D99667 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DB861BF48E89907AF628C4A /* Pods-ViperExample.debug.xcconfig */,
+				B5E5172EEF1584A9795C1C20 /* Pods-ViperExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BFE8E1832810384300B14BF1 = {
 			isa = PBXGroup;
 			children = (
 				BFE8E18E2810384300B14BF1 /* ViperExample */,
 				BFE8E18D2810384300B14BF1 /* Products */,
+				5764FB4E8588983A44D99667 /* Pods */,
+				D05231DBA89D42AC54E7837A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +151,178 @@
 				BFE8E18F2810384300B14BF1 /* AppDelegate.swift */,
 				BFE8E1912810384300B14BF1 /* SceneDelegate.swift */,
 				BFE8E1932810384300B14BF1 /* ViewController.swift */,
+				BFE8E1DA281039E800B14BF1 /* ShopCollectionViewCell.swift */,
+				BFE8E1AE281039E000B14BF1 /* Home */,
+				BFE8E1BB281039E000B14BF1 /* Main */,
 				BFE8E1952810384300B14BF1 /* Main.storyboard */,
 				BFE8E1982810384500B14BF1 /* Assets.xcassets */,
 				BFE8E19A2810384500B14BF1 /* LaunchScreen.storyboard */,
 				BFE8E19D2810384500B14BF1 /* Info.plist */,
+				BFE8E1DC28103A1900B14BF1 /* Modules */,
+				BFE8E1A3281039CA00B14BF1 /* Common */,
 			);
 			path = ViperExample;
+			sourceTree = "<group>";
+		};
+		BFE8E1A3281039CA00B14BF1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8E1A4281039CA00B14BF1 /* Implementations */,
+				BFE8E1A7281039CA00B14BF1 /* Entities */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BFE8E1A4281039CA00B14BF1 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8E1A5281039CA00B14BF1 /* ApiService.swift */,
+				BFE8E1A6281039CA00B14BF1 /* ApiServiceProtocol.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		BFE8E1A7281039CA00B14BF1 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8E1A8281039CA00B14BF1 /* Objects.swift */,
+				BFE8E1A9281039CA00B14BF1 /* Cattegories.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BFE8E1AE281039E000B14BF1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8E1AF281039E000B14BF1 /* Implementations */,
+				BFE8E1B5281039E000B14BF1 /* HomeModule.swift */,
+				BFE8E1B6281039E000B14BF1 /* Interfaces */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BFE8E1AF281039E000B14BF1 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8E1B0281039E000B14BF1 /* Default */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		BFE8E1B0281039E000B14BF1 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8E1B1281039E000B14BF1 /* HomeDefaultView.swift */,
+				BFE8E1B2281039E000B14BF1 /* HomeDefaultPresenter.swift */,
+				BFE8E1B3281039E000B14BF1 /* HomeDefaultInteractor.swift */,
+				BFE8E1B4281039E000B14BF1 /* HomeDefaultRouter.swift */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		BFE8E1B6281039E000B14BF1 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8E1B7281039E000B14BF1 /* HomeInteractor.swift */,
+				BFE8E1B8281039E000B14BF1 /* HomeView.swift */,
+				BFE8E1B9281039E000B14BF1 /* HomeRouter.swift */,
+				BFE8E1BA281039E000B14BF1 /* HomePresenter.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		BFE8E1BB281039E000B14BF1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8E1BC281039E000B14BF1 /* Implementations */,
+				BFE8E1C2281039E000B14BF1 /* MainModule.swift */,
+				BFE8E1C3281039E000B14BF1 /* Interfaces */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BFE8E1BC281039E000B14BF1 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8E1BD281039E000B14BF1 /* Default */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		BFE8E1BD281039E000B14BF1 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8E1BE281039E000B14BF1 /* MainDefaultRouter.swift */,
+				BFE8E1BF281039E000B14BF1 /* MainDefaultView.swift */,
+				BFE8E1C0281039E000B14BF1 /* MainDefaultInteractor.swift */,
+				BFE8E1C1281039E000B14BF1 /* MainDefaultPresenter.swift */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		BFE8E1C3281039E000B14BF1 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8E1C4281039E000B14BF1 /* MainInteractor.swift */,
+				BFE8E1C5281039E000B14BF1 /* MainPresenter.swift */,
+				BFE8E1C6281039E000B14BF1 /* MainRouter.swift */,
+				BFE8E1C7281039E000B14BF1 /* MainView.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		BFE8E1DC28103A1900B14BF1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8E1F328103F5100B14BF1 /* CatalogModule */,
+				BFE8E1E828103C5900B14BF1 /* ChoosedSubcategoriesModule */,
+				BFE8E1E728103B9900B14BF1 /* CategoryModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BFE8E1E728103B9900B14BF1 /* CategoryModule */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8E1DD28103A2B00B14BF1 /* CategoryModuleContract.swift */,
+				BFE8E1DE28103A2B00B14BF1 /* CategoryModulePresenter.swift */,
+				BFE8E1DF28103A2B00B14BF1 /* CategoryModuleRouter.swift */,
+				BFE8E1E028103A2B00B14BF1 /* CategoryModuleViewController.swift */,
+				BFE8E1E128103A2B00B14BF1 /* CategoryModuleInteractor.swift */,
+			);
+			path = CategoryModule;
+			sourceTree = "<group>";
+		};
+		BFE8E1E828103C5900B14BF1 /* ChoosedSubcategoriesModule */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8E1E928103C6B00B14BF1 /* ChoosedSubcategoriesModuleContract.swift */,
+				BFE8E1EA28103C6B00B14BF1 /* ChoosedSubcategoriesModulePresenter.swift */,
+				BFE8E1EB28103C6B00B14BF1 /* ChoosedSubcategoriesModuleRouter.swift */,
+				BFE8E1EC28103C6B00B14BF1 /* ChoosedSubcategoriesModuleViewController.swift */,
+				BFE8E1ED28103C6B00B14BF1 /* ChoosedSubcategoriesModuleInteractor.swift */,
+			);
+			path = ChoosedSubcategoriesModule;
+			sourceTree = "<group>";
+		};
+		BFE8E1F328103F5100B14BF1 /* CatalogModule */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8E1F428103F5E00B14BF1 /* CatalogModuleContract.swift */,
+				BFE8E1F528103F5E00B14BF1 /* CatalogModulePresenter.swift */,
+				BFE8E1F628103F5E00B14BF1 /* CatalogModuleRouter.swift */,
+				BFE8E1F728103F5E00B14BF1 /* CatalogModuleViewController.swift */,
+				BFE8E1F828103F5E00B14BF1 /* CatalogModuleInteractor.swift */,
+			);
+			path = CatalogModule;
+			sourceTree = "<group>";
+		};
+		D05231DBA89D42AC54E7837A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D5C32D40A11C6F05A07FAD4 /* Pods_ViperExample.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +332,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFE8E1A02810384500B14BF1 /* Build configuration list for PBXNativeTarget "ViperExample" */;
 			buildPhases = (
+				2EDE5A22070C47D3A10C4715 /* [CP] Check Pods Manifest.lock */,
 				BFE8E1882810384300B14BF1 /* Sources */,
 				BFE8E1892810384300B14BF1 /* Frameworks */,
 				BFE8E18A2810384300B14BF1 /* Resources */,
+				EE87161FAA80CD6356DD5733 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +393,94 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2EDE5A22070C47D3A10C4715 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViperExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE87161FAA80CD6356DD5733 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViperExample/Pods-ViperExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViperExample/Pods-ViperExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViperExample/Pods-ViperExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BFE8E1882810384300B14BF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE8E1E528103A2B00B14BF1 /* CategoryModuleViewController.swift in Sources */,
 				BFE8E1942810384300B14BF1 /* ViewController.swift in Sources */,
+				BFE8E1D5281039E000B14BF1 /* MainModule.swift in Sources */,
+				BFE8E1E628103A2B00B14BF1 /* CategoryModuleInteractor.swift in Sources */,
+				BFE8E1EF28103C6B00B14BF1 /* ChoosedSubcategoriesModulePresenter.swift in Sources */,
+				BFE8E1E428103A2B00B14BF1 /* CategoryModuleRouter.swift in Sources */,
+				BFE8E1CE281039E000B14BF1 /* HomeView.swift in Sources */,
+				BFE8E1CB281039E000B14BF1 /* HomeDefaultRouter.swift in Sources */,
+				BFE8E1D4281039E000B14BF1 /* MainDefaultPresenter.swift in Sources */,
+				BFE8E1C8281039E000B14BF1 /* HomeDefaultView.swift in Sources */,
+				BFE8E1CF281039E000B14BF1 /* HomeRouter.swift in Sources */,
+				BFE8E1F028103C6B00B14BF1 /* ChoosedSubcategoriesModuleRouter.swift in Sources */,
 				BFE8E1902810384300B14BF1 /* AppDelegate.swift in Sources */,
+				BFE8E1AB281039CA00B14BF1 /* ApiServiceProtocol.swift in Sources */,
+				BFE8E1FD28103F5E00B14BF1 /* CatalogModuleInteractor.swift in Sources */,
+				BFE8E1D2281039E000B14BF1 /* MainDefaultView.swift in Sources */,
+				BFE8E1DB281039E800B14BF1 /* ShopCollectionViewCell.swift in Sources */,
+				BFE8E1C9281039E000B14BF1 /* HomeDefaultPresenter.swift in Sources */,
+				BFE8E1E328103A2B00B14BF1 /* CategoryModulePresenter.swift in Sources */,
+				BFE8E1FA28103F5E00B14BF1 /* CatalogModulePresenter.swift in Sources */,
+				BFE8E1CC281039E000B14BF1 /* HomeModule.swift in Sources */,
+				BFE8E1FC28103F5E00B14BF1 /* CatalogModuleViewController.swift in Sources */,
+				BFE8E1CD281039E000B14BF1 /* HomeInteractor.swift in Sources */,
+				BFE8E1D9281039E000B14BF1 /* MainView.swift in Sources */,
+				BFE8E1AA281039CA00B14BF1 /* ApiService.swift in Sources */,
+				BFE8E1AC281039CA00B14BF1 /* Objects.swift in Sources */,
+				BFE8E1E228103A2B00B14BF1 /* CategoryModuleContract.swift in Sources */,
+				BFE8E1CA281039E000B14BF1 /* HomeDefaultInteractor.swift in Sources */,
+				BFE8E1F928103F5E00B14BF1 /* CatalogModuleContract.swift in Sources */,
+				BFE8E1D3281039E000B14BF1 /* MainDefaultInteractor.swift in Sources */,
+				BFE8E1D8281039E000B14BF1 /* MainRouter.swift in Sources */,
+				BFE8E1D6281039E000B14BF1 /* MainInteractor.swift in Sources */,
+				BFE8E1F128103C6B00B14BF1 /* ChoosedSubcategoriesModuleViewController.swift in Sources */,
+				BFE8E1FB28103F5E00B14BF1 /* CatalogModuleRouter.swift in Sources */,
+				BFE8E1D7281039E000B14BF1 /* MainPresenter.swift in Sources */,
 				BFE8E1922810384300B14BF1 /* SceneDelegate.swift in Sources */,
+				BFE8E1F228103C6B00B14BF1 /* ChoosedSubcategoriesModuleInteractor.swift in Sources */,
+				BFE8E1EE28103C6B00B14BF1 /* ChoosedSubcategoriesModuleContract.swift in Sources */,
+				BFE8E1AD281039CA00B14BF1 /* Cattegories.swift in Sources */,
+				BFE8E1D1281039E000B14BF1 /* MainDefaultRouter.swift in Sources */,
+				BFE8E1D0281039E000B14BF1 /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +624,13 @@
 		};
 		BFE8E1A12810384500B14BF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB861BF48E89907AF628C4A /* Pods-ViperExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WN5VMWRJC6;
+				DEVELOPMENT_TEAM = 9LYM8VAZLJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ViperExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -312,12 +653,13 @@
 		};
 		BFE8E1A22810384500B14BF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E5172EEF1584A9795C1C20 /* Pods-ViperExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WN5VMWRJC6;
+				DEVELOPMENT_TEAM = 9LYM8VAZLJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ViperExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

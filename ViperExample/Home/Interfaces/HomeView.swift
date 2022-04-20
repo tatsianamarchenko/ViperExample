@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol HomeView: {
+protocol HomeView: AnyObject {
     
     var presenter: HomePresenter? { get set }
 
