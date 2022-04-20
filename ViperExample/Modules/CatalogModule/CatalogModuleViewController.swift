@@ -58,9 +58,13 @@ class CatalogModuleViewController: UIViewController {
 		presenter?.update()
 	}
 
-	func showCategoryProducts() {
-		print("lol")
+	func showCategoryProducts(products: [Product]) {
+		self.products = products
+		DispatchQueue.main.async {
+			self.itemsCollection.reloadData()
+		}
 	}
+	var products = [Product]()
 
 	// MARK: - Properties
 	var presenter: ViewToPresenterCatalogModuleProtocol?
@@ -76,7 +80,7 @@ extension CatalogModuleViewController: PresenterToViewCatalogModuleProtocol{
 extension CatalogModuleViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-			return 10
+		return products.count
 	}
 
 	func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -90,7 +94,7 @@ extension CatalogModuleViewController: UICollectionViewDelegate, UICollectionVie
 				as? ShopCollectionViewCell else {
 					return UICollectionViewCell()
 				}
-
+		cell.config(model: products[indexPath.row], indexPath: indexPath)
 		cell.layer.cornerRadius = 20
 		cell.layer.borderWidth = 0
 		cell.layer.shadowColor = UIColor.systemGray.cgColor
@@ -104,7 +108,7 @@ extension CatalogModuleViewController: UICollectionViewDelegate, UICollectionVie
 	func collectionView(_ collectionView: UICollectionView,
 						layout collectionViewLayout: UICollectionViewLayout,
 						sizeForItemAt indexPath: IndexPath) -> CGSize {
-		return CGSize(width: view.frame.width-20, height: view.frame.height/5-20)
+		return CGSize(width: view.frame.width-20, height: view.frame.height/3)
 	}
 
 	func collectionView(_ collectionView: UICollectionView,

@@ -26,6 +26,6 @@ class CatalogModulePresenter: ViewToPresenterCatalogModuleProtocol {
 
 extension CatalogModulePresenter: InteractorToPresenterCatalogModuleProtocol {
 	func showLoadedData(products: [Product]) {
-		view?.showCategoryProducts()
+		view?.showCategoryProducts(products: products)
 	}
 }

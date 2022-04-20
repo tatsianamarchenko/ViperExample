@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UIKit
 
 class ShopCollectionViewCell: UICollectionViewCell {
 
@@ -17,9 +18,8 @@ class ShopCollectionViewCell: UICollectionViewCell {
 		lable.font = .systemFont(ofSize: 20, weight: .medium)
 		lable.backgroundColor = .systemBackground
 		lable.lineBreakMode = .byWordWrapping
-		lable.translatesAutoresizingMaskIntoConstraints = false
 		lable.lineBreakStrategy = .pushOut
-		lable.numberOfLines = 0
+		lable.numberOfLines = 3
 		return lable
 	}()
 
@@ -28,14 +28,15 @@ class ShopCollectionViewCell: UICollectionViewCell {
 		button.setImage(UIImage(systemName: "heart")?.withTintColor(.blue, renderingMode: .alwaysOriginal), for: .normal)
 		button.addTarget(self, action: #selector(toFavorite), for: .touchUpInside)
 		button.titleLabel?.textAlignment = .center
-		button.translatesAutoresizingMaskIntoConstraints = false
 		return button
 	}()
 
 	private lazy var typeLable : UILabel = {
 		var lable = UILabel()
 		lable.font = .systemFont(ofSize: 15, weight: .regular)
-		lable.translatesAutoresizingMaskIntoConstraints = false
+		lable.numberOfLines = 3
+		lable.lineBreakMode = .byWordWrapping
+		lable.lineBreakStrategy = .pushOut
 		lable.textColor = .darkGray
 		return lable
 	}()
@@ -43,7 +44,9 @@ class ShopCollectionViewCell: UICollectionViewCell {
 	private lazy var priceLable : UILabel = {
 		var lable = UILabel()
 		lable.font = .systemFont(ofSize: 20, weight: .medium)
-		lable.translatesAutoresizingMaskIntoConstraints = false
+		lable.numberOfLines = 3
+		lable.lineBreakMode = .byWordWrapping
+		lable.lineBreakStrategy = .pushOut
 		lable.textColor = .darkGray
 		lable.textAlignment = .right
 		return lable
@@ -51,16 +54,16 @@ class ShopCollectionViewCell: UICollectionViewCell {
 
 	private lazy var descriptionLable : UILabel = {
 		var lable = UILabel()
-		lable.translatesAutoresizingMaskIntoConstraints = false
-		lable.numberOfLines = 2
+		lable.numberOfLines = 3
+		lable.lineBreakMode = .byWordWrapping
+		lable.lineBreakStrategy = .pushOut
 		lable.font = .systemFont(ofSize: 15)
 		return lable
 	}()
 
 	private lazy var photoOfProduct: UIImageView = {
 		var image = UIImageView()
-		image.translatesAutoresizingMaskIntoConstraints = false
-		image.contentMode = .scaleToFill
+		image.contentMode = .scaleAspectFit
 		return image
 	}()
 
@@ -74,7 +77,7 @@ class ShopCollectionViewCell: UICollectionViewCell {
 		 addSubview(descriptionLable)
 		 addSubview(typeLable)
 		 addSubview(priceLable)
-		 addSubview(favoriteButton)
+		// addSubview(favoriteButton)
 		 makeConstants()
 	 }
 
@@ -94,41 +97,46 @@ class ShopCollectionViewCell: UICollectionViewCell {
 	 }
 
 	private func makeConstants() {
-		 NSLayoutConstraint.activate([
-			 photoOfProduct.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-			 photoOfProduct.topAnchor.constraint(equalTo: contentView.topAnchor),
-			 photoOfProduct.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-			 photoOfProduct.widthAnchor.constraint(equalToConstant: contentView.frame.width/3),
-			 photoOfProduct.heightAnchor.constraint(equalToConstant: contentView.frame.height),
+		photoOfProduct.snp.makeConstraints { make in
+			make.width.equalTo(contentView.frame.width/3-20)
+			make.height.equalTo(contentView.frame.height-20)
+			make.leading.equalTo(contentView.snp_leadingMargin).inset(10)
+			make.top.equalTo(contentView.snp_topMargin).inset(10)
+			make.bottom.equalTo(contentView.snp_bottomMargin).inset(10)
+		}
 
-			 nameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant:  10),
-			 nameLabel.leadingAnchor.constraint(equalTo: photoOfProduct.trailingAnchor, constant: 10),
-			 nameLabel.trailingAnchor.constraint(equalTo: favoriteButton.leadingAnchor, constant: -10),
-			 typeLable.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 5),
-			 typeLable.leadingAnchor.constraint(equalTo: photoOfProduct.trailingAnchor, constant: 10),
+		nameLabel.snp.makeConstraints { make in
+			make.leading.equalTo(photoOfProduct.snp_trailingMargin).inset(-20)
+			make.width.equalTo(contentView.frame.width/1.5-20)
+			make.top.equalTo(contentView.snp_topMargin).inset(10)
+		}
 
-			 descriptionLable.topAnchor.constraint(equalTo: typeLable.bottomAnchor, constant: 5),
-			 descriptionLable.leadingAnchor.constraint(equalTo: photoOfProduct.trailingAnchor, constant: 10),
-			 descriptionLable.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
-			 descriptionLable.widthAnchor.constraint(equalToConstant: contentView.frame.width/1.7),
+		typeLable.snp.makeConstraints { make in
+			make.leading.equalTo(photoOfProduct.snp_trailingMargin).inset(-20)
+			make.width.equalTo(contentView.frame.width/1.5-20)
+			make.top.equalTo(nameLabel.snp_bottomMargin).inset(-10)
+		}
 
-			 priceLable.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
-			 priceLable.widthAnchor.constraint(equalToConstant: contentView.frame.width/3),
-			 priceLable.topAnchor.constraint(equalTo: descriptionLable.bottomAnchor, constant: 5),
-			 priceLable.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
+		descriptionLable.snp.makeConstraints { make in
+			make.leading.equalTo(photoOfProduct.snp_trailingMargin).inset(-20)
+			make.width.equalTo(contentView.frame.width/1.5-20)
+			make.top.equalTo(typeLable.snp_bottomMargin).inset(-10)
+		}
 
-			 favoriteButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
-			 favoriteButton.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10)
-		 ])
+		priceLable.snp.makeConstraints { make in
+			make.leading.equalTo(photoOfProduct.snp_trailingMargin)
+			make.width.equalTo(contentView.frame.width/1.5-20)
+			make.trailing.equalTo(contentView.snp_trailingMargin)
+			make.bottom.equalTo(contentView.snp_bottomMargin).inset(10)
+		}
 	 }
 
-	func config(madel: Objects, indexPath: IndexPath) {
-//		nameLabel.text = madel.title
-//		descriptionLable.text = madel.description
-//		typeLable.text = madel.type
-//		priceLable.text = ("$\(madel.price)")
-//		photoOfProduct.image = madel.image?.getImage()
-
+	func config(model: Product, indexPath: IndexPath) {
+		nameLabel.text = model.name
+		descriptionLable.text = model.microDescription
+		typeLable.text = model.productDescription
+		priceLable.text = "\(model.prices.priceMin.amount) - \(model.prices.priceMax.amount) \(model.prices.priceMax.currency.rawValue)"
+		photoOfProduct.downloadedFrom(url: "https:\(model.images.header)")
 	}
 
 	@objc private func toFavorite(_ sender: UIButton) {

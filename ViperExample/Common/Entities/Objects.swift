@@ -10,19 +10,6 @@ import Foundation
 // MARK: - Welcome
 struct Objects: Codable {
 	let products: [Product]
-	let total: Int
-	let page: Page
-	let totalUngrouped: Int
-
-	enum CodingKeys: String, CodingKey {
-		case products, total, page
-		case totalUngrouped = "total_ungrouped"
-	}
-}
-
-// MARK: - Page
-struct Page: Codable {
-	let limit, items, current, last: Int
 }
 
 // MARK: - Product
@@ -40,14 +27,14 @@ struct Product: Codable {
 	let reviewURL: String?
 	let colorCode: String?
 	let prices: Prices
-	let maxInstallmentTerms: MaxInstallmentTerms?
-	let maxCobrandCashback: MaxCobrandCashback?
-	let sale: Sale
-	let second: Second
-	let forum: Forum
-	let url: String
-	let advertise: String?
-	let stickers: [Sticker]?
+//	let maxInstallmentTerms: MaxInstallmentTerms?
+//	let maxCobrandCashback: MaxCobrandCashback?
+//	let sale: Sale
+//	let second: Second
+//	let forum: Forum
+//	let url: String
+//	let advertise: String?
+	//let stickers: [String]?
 	let primeInfo: PrimeInfo
 
 	enum CodingKeys: String, CodingKey {
@@ -64,9 +51,9 @@ struct Product: Codable {
 		case reviewURL = "review_url"
 		case colorCode = "color_code"
 		case prices
-		case maxInstallmentTerms = "max_installment_terms"
-		case maxCobrandCashback = "max_cobrand_cashback"
-		case sale, second, forum, url, advertise, stickers
+//		case maxInstallmentTerms = "max_installment_terms"
+//		case maxCobrandCashback = "max_cobrand_cashback"
+//		case sale, second, forum, url, advertise, stickers
 		case primeInfo = "prime_info"
 	}
 }

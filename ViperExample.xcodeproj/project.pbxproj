@@ -52,6 +52,7 @@
 		BFE8E1FB28103F5E00B14BF1 /* CatalogModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1F628103F5E00B14BF1 /* CatalogModuleRouter.swift */; };
 		BFE8E1FC28103F5E00B14BF1 /* CatalogModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1F728103F5E00B14BF1 /* CatalogModuleViewController.swift */; };
 		BFE8E1FD28103F5E00B14BF1 /* CatalogModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1F828103F5E00B14BF1 /* CatalogModuleInteractor.swift */; };
+		BFE8E20028104ECC00B14BF1 /* UiImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8E1FF28104ECC00B14BF1 /* UiImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +105,7 @@
 		BFE8E1F628103F5E00B14BF1 /* CatalogModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogModuleRouter.swift; sourceTree = "<group>"; };
 		BFE8E1F728103F5E00B14BF1 /* CatalogModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogModuleViewController.swift; sourceTree = "<group>"; };
 		BFE8E1F828103F5E00B14BF1 /* CatalogModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogModuleInteractor.swift; sourceTree = "<group>"; };
+		BFE8E1FF28104ECC00B14BF1 /* UiImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		BFE8E1A3281039CA00B14BF1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BFE8E1FE28104EBB00B14BF1 /* Extensions */,
 				BFE8E1A4281039CA00B14BF1 /* Implementations */,
 				BFE8E1A7281039CA00B14BF1 /* Entities */,
 			);
@@ -317,6 +320,14 @@
 			path = CatalogModule;
 			sourceTree = "<group>";
 		};
+		BFE8E1FE28104EBB00B14BF1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8E1FF28104ECC00B14BF1 /* UiImageExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D05231DBA89D42AC54E7837A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,6 +470,7 @@
 				BFE8E1DB281039E800B14BF1 /* ShopCollectionViewCell.swift in Sources */,
 				BFE8E1C9281039E000B14BF1 /* HomeDefaultPresenter.swift in Sources */,
 				BFE8E1E328103A2B00B14BF1 /* CategoryModulePresenter.swift in Sources */,
+				BFE8E20028104ECC00B14BF1 /* UiImageExtension.swift in Sources */,
 				BFE8E1FA28103F5E00B14BF1 /* CatalogModulePresenter.swift in Sources */,
 				BFE8E1CC281039E000B14BF1 /* HomeModule.swift in Sources */,
 				BFE8E1FC28103F5E00B14BF1 /* CatalogModuleViewController.swift in Sources */,

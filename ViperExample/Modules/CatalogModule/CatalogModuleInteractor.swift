@@ -21,7 +21,7 @@ class CatalogModuleInteractor: PresenterToInteractorCatalogModuleProtocol {
 			switch result {
 			case .success(let success):
 				print(category)
-				print(success.total)
+				print(success.products.count)
 				self?.presenter?.showLoadedData(products: success.products)
 			case .failure(let failure):
 				print(category)

@@ -11,7 +11,7 @@ import Foundation
 
 // MARK: View Output (Presenter -> View)
 protocol PresenterToViewCatalogModuleProtocol {
-	func showCategoryProducts()
+	func showCategoryProducts(products: [Product])
 }
 
 

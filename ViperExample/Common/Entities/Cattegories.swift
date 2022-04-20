@@ -63,9 +63,7 @@ class CategorySource {
 													   FinalSubcateggoryPath(pathUrl: "scanner", title: "Сканеры"),
 													   FinalSubcateggoryPath(pathUrl: "cartridges", title: "Катриджи")]),
 												   finalCategory(subcategorieTitle: "Игры и ПО", finalSubcateggoryPath: [
-													   FinalSubcateggoryPath(pathUrl: "pcgames", title: "Игры для ПК"),
-													   FinalSubcateggoryPath(pathUrl: "games", title: "Игры для консолей"),
-													   FinalSubcateggoryPath(pathUrl: "paymentcard", title: "Карты оплаты и подписки")])]),
+													   FinalSubcateggoryPath(pathUrl: "games", title: "Игры для консолей") ])]),
 
 												Category(categoryTitle: CategoryTitle.appliances.rawValue, subcategories: [
 												   finalCategory(subcategorieTitle: "Крупногабаритная техника", finalSubcateggoryPath: [
@@ -134,8 +132,7 @@ class CategorySource {
 												Category(categoryTitle: CategoryTitle.workAndOffice.rawValue, subcategories: [
 												   finalCategory(subcategorieTitle: "Торговля и финансы", finalSubcateggoryPath: [
 													   FinalSubcateggoryPath(pathUrl: "cashregister", title: "Кассовые аппараты и платежные терминалы"),
-													   FinalSubcateggoryPath(pathUrl: "barcode", title: "Сканеры штрих-кодов"),
-													   FinalSubcateggoryPath(pathUrl: "counters", title: "Счетчики банкнот и монет")]),
+													   FinalSubcateggoryPath(pathUrl: "barcode", title: "Сканеры штрих-кодов")]),
 												   finalCategory(subcategorieTitle: "Гигиена и питание", finalSubcateggoryPath: [
 													   FinalSubcateggoryPath(pathUrl: "dispenser", title: "Аксессуары для ванной и туалета"),
 													   FinalSubcateggoryPath(pathUrl: "handsdryer", title: "Сушилки для рук, волос"),
@@ -144,11 +141,8 @@ class CategorySource {
 												Category(categoryTitle: CategoryTitle.food.rawValue, subcategories: [
 												   finalCategory(subcategorieTitle: "Пицца, суши, мясо", finalSubcateggoryPath: [
 													   FinalSubcateggoryPath(pathUrl: "dominos", title: "Пицца"),
-													   FinalSubcateggoryPath(pathUrl: "greenery", title: "Бакалея"),
-													   FinalSubcateggoryPath(pathUrl: "kamhatka", title: "Камчатка")]),
+													   FinalSubcateggoryPath(pathUrl: "greenery", title: "Бакалея")]),
 												   finalCategory(subcategorieTitle: "Десерты", finalSubcateggoryPath: [
-													   FinalSubcateggoryPath(pathUrl: "sweetmarket", title: "Sweetmarket"),
-													   FinalSubcateggoryPath(pathUrl: "stolle", title: "Штолле"),
 													   FinalSubcateggoryPath(pathUrl: "saladdrive", title: "Salad Drive")])])])
 
 }
