@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		}
 		window = UIWindow(frame: UIScreen.main.bounds)
 
-		let home = MainModule().buildDefault()
+		let home = ConfigModuleRouter.createModule()
 		self.window?.rootViewController = home
 
 		window?.makeKeyAndVisible()

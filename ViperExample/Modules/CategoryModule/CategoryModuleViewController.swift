@@ -22,11 +22,11 @@ class CategoryModuleViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		view.backgroundColor = .systemBackground
-
+		title = "Catalog"
 		view.addSubview(table)
 		table.delegate = self
 		table.dataSource = self
-
+		
 		table.snp.makeConstraints { make in
 			make.top.bottom.leading.trailing.equalTo(view)
 		}

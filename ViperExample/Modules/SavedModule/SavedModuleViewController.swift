@@ -22,7 +22,7 @@ var savedProducts = [SavedObject]()
     override func viewDidLoad() {
         super.viewDidLoad()
 		view.backgroundColor = .systemBackground
-
+		title = "Saved"
 		view.addSubview(table)
 		table.delegate = self
 		table.dataSource = self
